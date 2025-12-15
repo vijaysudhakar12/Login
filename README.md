@@ -49,20 +49,6 @@ Java-JSP-Login-System
 │
 └── README.md
 
-
----
-
-## 🗄️ Database Setup
-```sql
-CREATE DATABASE muledb;
-
-USE muledb;
-
-CREATE TABLE login (
-    uname VARCHAR(50) PRIMARY KEY,
-    password VARCHAR(50)
-);
-
 ⚙️ Configuration
 
 Add MySQL Connector/J to your project build path
@@ -119,3 +105,19 @@ Ideal for beginner Java Web projects
 
 👨‍💻 Author
 Vijay Sudhakar
+
+---
+
+## 🗄️ Database Setup
+```sql
+CREATE DATABASE muledb;
+
+USE muledb;
+
+CREATE TABLE login (
+    uname VARCHAR(50) PRIMARY KEY,
+    password VARCHAR(50)
+);
+Update database credentials inside LoginDao.java
+
+
