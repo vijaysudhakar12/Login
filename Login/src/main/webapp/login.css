@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+} /* Login / Account / Logout box */
+.login-box, .account-box, .logout-box {
+	width: 350px;
+	padding: 30px;
+	padding-right: 53px;
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	text-align: center;
+} /* Headings */
+.login-box h2, .account-box h2, .logout-box h2 {
+	margin-bottom: 25px;
+	color: #333;
+} /* Inputs */
+.login-box input[type="text"], .login-box input[type="password"],
+	.account-box input[type="text"], .account-box input[type="password"] {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 14px;
+} /* Buttons */
+.login-box input[type="submit"], .account-box input[type="submit"],
+	.logout-box a {
+	width: 75%;
+	padding: 12px;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+} /* Login button */
+.login-box input[type="submit"] {
+	background: #667eea;
+}
+
+.login-box input[type="submit"]:hover {
+	background: #5a67d8;
+} /* Account button */
+.account-box input[type="submit"] {
+	background: #43cea2;
+}
+
+.account-box input[type="submit"]:hover {
+	background: #36b592;
+} /* Logout button */
+.logout-box a {
+	background: #ff758c;
+}
+
+.logout-box a:hover {
+	background: #ff5a75;
+} /* Links */
+.login-box a, .account-box a {
+	display: block;
+	margin-top: 15px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.login-box a {
+	color: #667eea;
+}
+
+.account-box a {
+	color: #185a9d;
+}
+
+.login-box a:hover, .account-box a:hover {
+	text-decoration: underline;
+} /* Page backgrounds */
+body.login {
+	background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+body.account {
+	background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+body.logout {
+	background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
